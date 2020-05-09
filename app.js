@@ -15,6 +15,7 @@ Requirements:
 -Clean up text input styling
 -Figure out image scaling and saving image to preserve text location before putting in savedMemeContainer (Canvas seems necessary)
 -Add ability to remove the text currently present on the working meme
+-Fix 'X' on remove button: it looks different
 
 */
 
