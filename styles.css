@@ -91,6 +91,26 @@ span {
 	padding-top: 10px;
 }
 
+#text-clear-container {
+	display: flex;
+	justify-content: space-evenly;
+}
+
+#clear-text-btn {
+	background-color: whitesmoke;
+	color: #393d3f;
+	font-family: 'Lobster', cursive;
+	padding: 5px;
+	transition: 150ms;
+}
+#clear-text-btn:hover {
+	cursor: pointer;
+	background-color: #39304a;
+	border: outset 2px #39304a;
+	color: white;
+	transition: 150ms;
+}
+
 #create-btn-container {
 	display: flex;
 	justify-content: space-evenly;

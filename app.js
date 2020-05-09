@@ -13,7 +13,7 @@ Requirements:
 -Save saved memes to localStorage - remove if deleted
 -Add clear all to saved memes
 -Clean up text input styling
--Figure out image scaling and saving image to preserve text location before putting in savedMemeContainer
+-Figure out image scaling and saving image to preserve text location before putting in savedMemeContainer (Canvas seems necessary)
 -Add ability to remove the text currently present on the working meme
 
 */
@@ -38,6 +38,7 @@ const fontColor = document.querySelector('#color-input');
 const topTextBg = document.querySelector('#top-bg-input');
 const botTextBg = document.querySelector('#bottom-bg-input');
 const imgUpload = document.querySelector('#upload-file');
+const clearTextBtn = document.querySelector('#clear-text-btn');
 
 //Add Event listeners
 //Create meme button gathers necessary values for displaying meme in working container
@@ -58,6 +59,13 @@ createBtn.addEventListener('click', (e) => {
 //Listener on Save Meme button
 saveBtn.addEventListener('click', () => {
 	saveMeme();
+});
+
+//Listern on clear current text button to clear any text on working meme
+clearTextBtn.addEventListener('click', (e) => {
+	e.preventDefault();
+	memeTopText.innerText = '';
+	memeBotText.innerText = '';
 });
 
 //Uses submitted arguments to create new meme in the working meme container. Will use new info, or retain old values if there is nothing in the input fields
