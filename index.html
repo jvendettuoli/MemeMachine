@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Memaw's Memes</title>
+    <link href="https://fonts.googleapis.com/css?family=Teko:700|Lobster|Nunito|Righteous&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <img src="memaws/people.svg" alt="grandma with coin stack">
+        <img src="memaws/conveyor.svg" alt="conveyor belt machine">
+        <img src="memaws/grandma.svg" alt="happy grandma">
+        <div>
+            <h1 id="title">Memaw's Meme Machine</h1>
+            <p>A lean, mean, memeing machine!</p>
+        </div>
+        <img src="memaws/grandma.svg" alt="grandma with coin stack">
+
+        <img src="memaws/conveyor.svg" alt="conveyor belt machine">
+        <img src="memaws/people.svg" alt="happy grandma">
+    </header>
+    <div id="submit-container">
+        <form id="submit-form" action="">
+            <div id="img-input-container">
+                <h2>Background Image</h2>
+                <label for="img-url-input">Image Address</label>
+                <input class="input-text" id="img-url-input" type="text" placeholder="Enter image URL...">
+                <hr>
+                <span>OR</span>
+                <hr>
+                <label for="img-url-input">Upload Picture from File</label>
+                <input class="input-text" type="file" multiple='false' accept=".jpg,.jpeg,.png,.gif,.tiff" id="upload-file" >
+    
+            </div>
+            <div id="text-input-container">
+                <h2>Text</h2>
+                
+                <label for="top-text-input">Top Text</label>
+                <input class="input-text" id="top-text-input" type="text" placeholder="Enter top text...">
+                <div>
+                    <label class="bg-input"for="top-bg-input">Black background for text:</label>
+                    <input class="input-text" id="top-bg-input" type="checkbox">
+                </div>
+                <hr>
+                <label for="bottom-text-input">Bottom Text</label>
+                <input class="input-text" id="bottom-text-input" type="text" placeholder="Enter bottom text...">
+                <div>
+                    <label class="bg-input"for="bottom-bg-input">Black background for text:</label>
+                    <input id="bottom-bg-input" type="checkbox">
+                </div>
+                <hr>
+
+                <div>
+                <label for="color-input">Text Color: </label>
+                <input id="color-input" type="color" value="#ffffff">
+            </div>
+            </div>
+        </form>
+    </div>
+    </div>
+    <div class="meme-button" id="create-btn-container">
+        <input id="create-btn" type="submit" form="submit-form" value="&dArr;  &dArr;  &dArr;  Create Meme  &dArr;  &dArr;  &dArr;">
+    </div>
+   
+    <div id="working-meme-container">
+        <div id="meme">
+            <div class="meme text" id="meme-top-text"></div>
+            <img id="meme-img" src="https://85434-523951-1-raikfcquaxqncofqfm.stackpathdns.com/wp-content/uploads/2018/01/kedi-and-other-cat-movies.jpg" alt="Working Meme Image">
+            <div class="meme text" id="meme-bottom-text"></div>
+        </div>
+        
+       
+    </div>
+    <div class="meme-button" id="save-btn-container">
+        <p id="save-text" >&dArr;  &dArr;  &dArr;  Save Meme  &dArr;  &dArr;  &dArr;</p>
+    </div>
+    <div id="saved-meme-container">
+
+    </div>
+
+    <div class="input-text">Memaw icons made by <a href="https://www.flaticon.com/authors/smashicons" title="Smashicons">Smashicons</a>, <a href="https://www.flaticon.com/authors/freepik" title="Freepik">Freepik</a>, <a href="https://www.flaticon.com/authors/monkik" title="monkik">monkik</a>, <a href="https://www.flaticon.com/authors/photo3idea-studio" title="photo3idea_studio">photo3idea_studio</a>, <a href="https://www.flaticon.com/authors/eucalyp" title="Eucalyp">Eucalyp</a> from <a href="https://www.flaticon.com/" title="Flaticon">www.flaticon.com</a></div>
+    <script src="app.js"></script>
+</body>
+</html>
