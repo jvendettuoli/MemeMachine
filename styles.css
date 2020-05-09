@@ -1,0 +1,218 @@
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+body {
+	background-color: #c6c5b9;
+}
+
+header {
+	display: flex;
+	justify-content: space-evenly;
+	background-color: whitesmoke;
+	border-radius: 10px;
+	color: #0d1317;
+	font-family: 'Nunito', sans-serif;
+	text-align: center;
+	padding: 10px;
+	margin: 10px;
+}
+header > img {
+	height: 50px;
+}
+h1 {
+	text-transform: uppercase;
+	font-family: 'Righteous', cursive;
+	letter-spacing: 4px;
+}
+
+h2 {
+	text-align: center;
+}
+
+hr {
+	margin: 10px;
+}
+
+span {
+	text-align: center;
+}
+
+.bg-input {
+	font-size: 0.9em;
+	font-weight: lighter;
+}
+
+#submit-form {
+	display: flex;
+	flex-direction: row;
+	justify-content: space-evenly;
+	margin: 10px;
+}
+
+#submit-form > * {
+	font-family: 'Lobster', cursive;
+}
+
+#img-input-container {
+	display: flex;
+	flex-direction: column;
+	justify-content: space-evenly;
+	background-color: whitesmoke;
+	border-radius: 10px;
+	color: #393d3f;
+	width: 50%;
+	margin: 30px;
+	padding: 20px;
+	padding-top: 10px;
+}
+#img-input-container > hr {
+	margin: 10px;
+}
+
+#upload-file {
+	color: #393d3f;
+}
+.input-text {
+	font-family: 'Nunito', sans-serif;
+}
+#text-input-container {
+	display: flex;
+	flex-direction: column;
+	justify-content: space-evenly;
+	background-color: whitesmoke;
+	border-radius: 10px;
+	color: #393d3f;
+	width: 50%;
+	margin: 30px;
+	padding: 20px;
+	padding-top: 10px;
+}
+
+#create-btn-container {
+	display: flex;
+	justify-content: space-evenly;
+	align-items: center;
+	width: 90vw;
+	margin: auto;
+}
+#create-btn {
+	background-color: whitesmoke;
+	border: outset 5px whitesmoke;
+	font-family: 'Righteous', cursive;
+	font-size: 2em;
+	width: 100%;
+	height: 100%;
+	transition: 150ms;
+}
+#create-btn:hover {
+	cursor: pointer;
+	background-color: #39304a;
+	border: outset 5px #39304a;
+	color: white;
+	transition: 150ms;
+}
+
+#working-meme-container {
+	display: flex;
+	background-color: #393d3f;
+	max-height: 85vh;
+	width: 90vw;
+	margin: auto;
+}
+
+#meme {
+	position: relative;
+	text-align: center;
+	margin: 20px auto;
+	object-fit: cover;
+}
+
+.meme.text {
+	position: absolute;
+	overflow-wrap: break-word;
+	font-weight: bolder;
+	font-family: 'Teko', sans-serif;
+	color: var(--font-color, white);
+	text-shadow: 1px 1px 2px black;
+	text-transform: uppercase;
+	font-size: 3em;
+	margin: auto;
+	width: 100%;
+	z-index: 1;
+}
+
+.meme.text.bar {
+	background-color: black;
+}
+
+#meme-top-text {
+	top: 0px;
+}
+#meme-bottom-text {
+	bottom: 0px;
+}
+#meme-img {
+	width: 100%;
+	height: 100%;
+	z-index: 0;
+}
+#save-btn-container {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	background-color: whitesmoke;
+	border: outset 5px whitesmoke;
+	font-family: 'Righteous', cursive;
+	font-size: 2em;
+	width: 90vw;
+	margin: auto;
+	transition: 150ms;
+}
+#save-btn-container:hover {
+	cursor: pointer;
+	background-color: #39304a;
+	border: outset 5px #39304a;
+	color: white;
+	transition: 150ms;
+}
+
+#saved-meme-container {
+	display: flex;
+	overflow: auto;
+	background-color: whitesmoke;
+	border-radius: 10px;
+	height: 200px;
+	margin: 40px;
+	margin-top: 15px;
+}
+
+#meme.saved {
+	min-width: 250px;
+	width: 250px;
+	margin: 15px;
+}
+#meme.saved > * {
+	font-size: 1.3em;
+}
+
+button.rmv-btn {
+	position: absolute;
+	height: 25px;
+	width: 25px;
+	top: -10px;
+	right: -10px;
+	cursor: pointer;
+	border-radius: 15px;
+	transition: 100ms;
+
+	z-index: 1;
+}
+button.rmv-btn:hover {
+	background-color: red;
+	border: outset red 2px;
+	color: white;
+	transition: 100ms;
+}
