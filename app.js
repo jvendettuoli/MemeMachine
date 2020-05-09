@@ -14,6 +14,7 @@ Requirements:
 -Add clear all to saved memes
 -Clean up text input styling
 -Figure out image scaling and saving image to preserve text location before putting in savedMemeContainer
+-Add ability to remove the text currently present on the working meme
 
 */
 
